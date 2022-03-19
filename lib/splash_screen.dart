@@ -4,7 +4,6 @@ import 'package:flutter/material.dart';
 
 import 'home_screen.dart';
 
-
 // ignore: camel_case_types
 class splash_screen extends StatefulWidget {
   const splash_screen({Key? key}) : super(key: key);
@@ -47,7 +46,7 @@ class _splash_screenState extends State<splash_screen> {
     final size = MediaQuery.of(context).size;
     return Scaffold(
         body: Container(
-      color: Color(0xffefefee),
+      color: Colors.white,
       child: Column(
         children: [
           Expanded(
@@ -56,7 +55,7 @@ class _splash_screenState extends State<splash_screen> {
             child: Container(
                 decoration: BoxDecoration(
                     image: DecorationImage(
-                        image: AssetImage('assets/logo-large.png'),
+                        image: AssetImage('assets/logo.jpg'),
                         scale: 3,
                         alignment: Alignment.center))),
           )),
